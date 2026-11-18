@@ -12,20 +12,15 @@ Sources:
 from __future__ import annotations
 
 import argparse
-import os
+import sys
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "data"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from project_paths import ROOT, apply
 
-for name, path in {
-    "NLTK_DATA": ROOT / ".data" / "nltk_data",
-    "SCIKIT_LEARN_DATA": ROOT / ".data" / "scikit_learn_data",
-    "KERAS_HOME": ROOT / ".keras",
-    "MPLCONFIGDIR": ROOT / ".cache" / "matplotlib",
-}.items():
-    os.environ.setdefault(name, str(path))
+apply()
+DATA = ROOT / "data"
 
 SEABORN_DATASETS = [
     "anagrams", "anscombe", "attention", "brain_networks", "car_crashes",

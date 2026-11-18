@@ -12,7 +12,10 @@ from pathlib import Path
 import nbformat
 from nbclient import NotebookClient
 
-ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from project_paths import ROOT, apply
+
+apply()
 NOTEBOOKS = ROOT / "notebooks"
 REPORTS = ROOT / "reports" / "executed"
 
