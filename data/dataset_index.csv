@@ -1,0 +1,35 @@
+file,rows,columns,source,description
+anagrams.csv,20,"subidr, attnr, num1, num2, num3",seaborn-data,Anagram task reaction times (psychology experiment).
+anscombe.csv,44,"dataset, x, y",seaborn-data,"Anscombe's quartet: four datasets with identical statistics, different shapes."
+attention.csv,60,"Unnamed: 0, subject, attention, solutions, score",seaborn-data,Attention task data (psych252).
+blobs.csv,600,"feature_0, feature_1, target",scikit-learn,Synthetic or bundled dataset
+brain_networks.csv,923,"network, 1, 1.1, 2, 2.1, 3, 3.1, 4, 4.1, 5, 5.1, 6, 6.1, 6.2, 6.3, 7, 7.1, 7.2, 7.3, 7.4, 7.5, 8, 8.1, 8.2, 8.3, 8.4, 8.5, 9, 9.1, 10, 10.1, 11, 11.1, 12, 12.1, 12.2, 12.3, 12.4, 13, 13.1, 13.2, 13.3, 13.4, 13.5, 14, 14.1, 15, 15.1, 16, 16.1, 16.2, 16.3, 16.4, 16.5, 16.6, 16.7, 17, 17.1, 17.2, 17.3, 17.4, 17.5, 17.6",seaborn-data,Functional brain connectivity networks.
+car_crashes.csv,51,"total, speeding, alcohol, not_distracted, no_previous, ins_premium, ins_losses, abbrev",seaborn-data,US state car crash fatalities and related factors.
+circles.csv,600,"feature_0, feature_1, target",scikit-learn,Synthetic or bundled dataset
+classification.csv,1000,"feature_0, feature_1, feature_2, feature_3, feature_4, feature_5, feature_6, feature_7, feature_8, feature_9, feature_10, feature_11, feature_12, feature_13, feature_14, feature_15, feature_16, feature_17, feature_18, feature_19, target",scikit-learn,Synthetic or bundled dataset
+dataset_index.csv,33,"file, rows, columns, source, description",scikit-learn,Synthetic or bundled dataset
+diamonds.csv,53940,"carat, cut, color, clarity, depth, table, price, x, y, z",seaborn-data,"54,000 diamond prices with carat, cut, color, clarity."
+digits.csv,1797,"pixel_0_0, pixel_0_1, pixel_0_2, pixel_0_3, pixel_0_4, pixel_0_5, pixel_0_6, pixel_0_7, pixel_1_0, pixel_1_1, pixel_1_2, pixel_1_3, pixel_1_4, pixel_1_5, pixel_1_6, pixel_1_7, pixel_2_0, pixel_2_1, pixel_2_2, pixel_2_3, pixel_2_4, pixel_2_5, pixel_2_6, pixel_2_7, pixel_3_0, pixel_3_1, pixel_3_2, pixel_3_3, pixel_3_4, pixel_3_5, pixel_3_6, pixel_3_7, pixel_4_0, pixel_4_1, pixel_4_2, pixel_4_3, pixel_4_4, pixel_4_5, pixel_4_6, pixel_4_7, pixel_5_0, pixel_5_1, pixel_5_2, pixel_5_3, pixel_5_4, pixel_5_5, pixel_5_6, pixel_5_7, pixel_6_0, pixel_6_1, pixel_6_2, pixel_6_3, pixel_6_4, pixel_6_5, pixel_6_6, pixel_6_7, pixel_7_0, pixel_7_1, pixel_7_2, pixel_7_3, pixel_7_4, pixel_7_5, pixel_7_6, pixel_7_7, target, target_name",scikit-learn,Synthetic or bundled dataset
+dots.csv,848,"align, choice, time, coherence, firing_rate",seaborn-data,Perceptual decision-making dot-motion data.
+dowjones.csv,649,"Date, Price",seaborn-data,Dow Jones index daily closing values.
+exercise.csv,90,"Unnamed: 0, id, diet, pulse, time, kind",seaborn-data,Cardiovascular exercise and diet experiment.
+flights.csv,144,"year, month, passengers",seaborn-data,"Monthly airline passenger counts, 1949-1960."
+fmri.csv,1064,"subject, timepoint, event, region, signal",seaborn-data,fMRI signal timeseries across brain regions and events.
+geyser.csv,272,"duration, waiting, kind",seaborn-data,Old Faithful geyser eruption duration and waiting time.
+glue.csv,64,"Model, Year, Encoder, Task, Score",seaborn-data,Glue benchmark NLP scores.
+healthexp.csv,274,"Year, Country, Spending_USD, Life_Expectancy",seaborn-data,Life expectancy vs health expenditure by country.
+iris.csv,150,"sepal_length, sepal_width, petal_length, petal_width, species",seaborn-data,"Fisher's iris flowers: 150 rows, 3 species, 4 measurements."
+linnerud.csv,20,"Chins, Situps, Jumps, target_Weight, target_Waist, target_Pulse",scikit-learn,Synthetic or bundled dataset
+moons.csv,600,"feature_0, feature_1, target",scikit-learn,Synthetic or bundled dataset
+mpg.csv,398,"mpg, cylinders, displacement, horsepower, weight, acceleration, model_year, origin, name",seaborn-data,Fuel economy and car attributes.
+penguins.csv,344,"species, island, bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g, sex",seaborn-data,Palmer Station penguin body measurements and species.
+planets.csv,1035,"method, number, orbital_period, mass, distance, year",seaborn-data,NASA exoplanet candidate discoveries and properties.
+regression.csv,1000,"feature_0, feature_1, feature_2, feature_3, feature_4, feature_5, feature_6, feature_7, feature_8, feature_9, target",scikit-learn,Synthetic or bundled dataset
+seaice.csv,13175,"Date, Extent",seaborn-data,Arctic sea ice extent by month and year.
+sk_breast_cancer.csv,569,"mean radius, mean texture, mean perimeter, mean area, mean smoothness, mean compactness, mean concavity, mean concave points, mean symmetry, mean fractal dimension, radius error, texture error, perimeter error, area error, smoothness error, compactness error, concavity error, concave points error, symmetry error, fractal dimension error, worst radius, worst texture, worst perimeter, worst area, worst smoothness, worst compactness, worst concavity, worst concave points, worst symmetry, worst fractal dimension, target, target_name",scikit-learn,Synthetic or bundled dataset
+sk_diabetes.csv,442,"age, sex, bmi, bp, s1, s2, s3, s4, s5, s6, target",scikit-learn,Synthetic or bundled dataset
+sk_iris.csv,150,"sepal length (cm), sepal width (cm), petal length (cm), petal width (cm), target, target_name",scikit-learn,Synthetic or bundled dataset
+sk_wine.csv,178,"alcohol, malic_acid, ash, alcalinity_of_ash, magnesium, total_phenols, flavanoids, nonflavanoid_phenols, proanthocyanins, color_intensity, hue, od280/od315_of_diluted_wines, proline, target, target_name",scikit-learn,Synthetic or bundled dataset
+taxis.csv,6433,"pickup, dropoff, passengers, distance, fare, tip, tolls, total, color, payment, pickup_zone, dropoff_zone, pickup_borough, dropoff_borough",seaborn-data,NYC taxi trip records.
+tips.csv,244,"total_bill, tip, sex, smoker, day, time, size",seaborn-data,"Restaurant tips by bill, sex, smoker, day, time, party size."
+titanic.csv,891,"survived, pclass, sex, age, sibsp, parch, fare, embarked, class, who, adult_male, deck, embark_town, alive, alone",seaborn-data,Titanic passenger survival data.

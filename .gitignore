@@ -1,0 +1,25 @@
+# Local environments and package caches
+.venv/
+.bootstrap/
+__pycache__/
+*.py[cod]
+
+# Generated library caches and state (recreated by setup.py)
+.data/
+.keras/
+.cache/
+.jupyter/
+
+# Notebook and execution residue
+.ipynb_checkpoints/
+reports/executed/
+dl_tmp/
+catboost_info/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Notebook-generated demo modules
+_ds_modules/

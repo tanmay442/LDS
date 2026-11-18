@@ -1,0 +1,90 @@
+[project]
+name = "ds-learning-env"
+version = "0.1.0"
+description = "Local Data Science learning environment built with uv + Jupyter (covers HBTU NWS-101/102 syllabus Units I-V)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # ---- Interactive / Jupyter (Unit IV) ----
+    "jupyter>=1.1",
+    "jupyterlab>=4.2",
+    "ipykernel>=6.29",
+    "ipython>=8.30",
+    "nbformat>=5.10",
+    "nbconvert>=7.16",
+    "ipywidgets>=8.1",
+    "jupyterlab-widgets>=3.0",
+    "widgetsnbextension>=4.0",
+
+    # ---- Core scientific stack (Unit IV) ----
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scipy>=1.13",
+    "sympy>=1.13",
+    "statsmodels>=0.14",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+    "plotly>=5.23",
+    "bokeh>=3.5",
+    "kaleido>=0.2.1",
+
+    # ---- Traditional ML (Unit V) ----
+    "scikit-learn>=1.5",
+    "imbalanced-learn>=0.12",
+    "xgboost>=2.1",
+    "lightgbm>=4.4",
+    "catboost>=1.2",
+    "mlxtend>=0.23",
+    "yellowbrick>=1.5",
+    "shap>=0.46",
+    "optuna>=3.6",
+    "joblib>=1.4",
+    "threadpoolctl>=3.5",
+
+    # ---- Deep learning (Unit V) ----
+    "torch>=2.4",
+    "torchvision>=0.19",
+    "tensorflow>=2.17",
+    "keras>=3.5",
+    "tensorboard>=2.17",
+
+    # ---- NLP (Unit V) ----
+    "nltk>=3.8",
+    "gensim>=4.3",
+    "textblob>=0.17",
+    "wordcloud>=1.9",
+
+    # ---- Databases / SQL (Unit III + Unit V) ----
+    "sqlalchemy>=2.0",
+    "psycopg2-binary>=2.9",
+    "pymysql>=1.1",
+    "duckdb>=1.0",
+
+    # ---- Data I/O & general utilities ----
+    "openpyxl>=3.1",
+    "pyarrow>=16.1",
+    "requests>=2.32",
+    "tqdm>=4.66",
+    "pillow>=10.4",
+    "lxml>=5.2",
+    "html5lib>=1.1",
+    "regex>=2024.7",
+    "missingno>=0.5",
+    "kagglehub>=0.2",
+    "tabulate>=0.9",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv]
+# PyTorch ships CUDA wheels by default on Linux. TensorFlow loads its own CUDA
+# libraries, which abort the process when a CUDA PyTorch wheel is also imported.
+# Pin PyTorch to the CPU index so both frameworks work in one notebook kernel.
+index-strategy = "unsafe-best-match"
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+torchvision = [{ index = "pytorch-cpu" }]
