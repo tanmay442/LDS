@@ -979,7 +979,7 @@ cells.append(md(r"""
 """))
 cells.append(code(r"""
 import os
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"  # keep TensorFlow's startup logs quiet
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"  # keep TensorFlow's startup logs quiet
 
 import numpy as np
 import tensorflow as tf

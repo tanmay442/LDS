@@ -138,6 +138,7 @@ def install_nltk_data() -> None:
         "punkt", "punkt_tab", "stopwords", "wordnet", "omw-1.4",
         "averaged_perceptron_tagger", "averaged_perceptron_tagger_eng",
         "vader_lexicon", "brown", "movie_reviews", "reuters", "gutenberg",
+        "maxent_ne_chunker", "maxent_ne_chunker_tab", "universal_tagset", "words",
     ]
     for package in packages:
         try:

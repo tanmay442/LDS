@@ -343,9 +343,9 @@ def corpus_report(name, reader):
     if file_ids is None:
         return
     print(name, "file count:", len(file_ids), "sample:", file_ids[:3])
-    categories = nltk_need_data(name + ".categories", lambda: reader.categories())
-    if categories is not None:
-        print(name, "categories:", categories)
+    category_reader = nltk_need_data(name + ".categories", lambda: getattr(reader, "categories", None))
+    if callable(category_reader):
+        print(name, "categories:", category_reader())
     words = nltk_need_data(name + ".words", lambda: reader.words(file_ids[0]))
     if words is not None:
         print(name, "first 12 words:", list(words)[:12])
