@@ -171,8 +171,10 @@ def main():
         print("First run, or the folder moved. Setting up the environment.")
         build_environment()
 
-    if not (ROOT / "data" / "iris.csv").exists():
-        print("Downloading the datasets...")
+    needs_data = not (ROOT / "data" / "iris.csv").exists()
+    needs_nltk = not (ROOT / ".data" / "nltk_data" / "tokenizers" / "punkt").exists()
+    if needs_data or needs_nltk:
+        print("Downloading the datasets and NLTK corpora...")
         run([tool(VENV, "python"), ROOT / "scripts" / "download_data.py", "--nltk"], environment)
 
     if not server_is_running():
