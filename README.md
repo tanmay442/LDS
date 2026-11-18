@@ -93,13 +93,13 @@ that need a running server and credentials.
 | Scientific core | numpy, pandas, scipy, sympy, statsmodels |
 | Visualisation | matplotlib, seaborn, plotly, bokeh, kaleido |
 | Machine learning | scikit-learn, imbalanced-learn, xgboost, lightgbm, catboost, mlxtend, yellowbrick, shap, optuna, joblib |
-| Deep learning | tensorflow, keras, tensorboard, torch (CPU build), torchvision |
+| Deep learning | tensorflow-cpu, keras, tensorboard, torch (CPU build), torchvision |
 | NLP | nltk, gensim, textblob, wordcloud |
 | Databases | sqlalchemy, duckdb, psycopg2-binary, pymysql |
 | Utilities | openpyxl, pyarrow, requests, tqdm, regex, missingno, kagglehub, tabulate, python-dotenv |
 
-PyTorch is pinned to the CPU index. A CUDA build aborts the kernel when
-TensorFlow is imported in the same notebook.
+PyTorch is pinned to the CPU index and TensorFlow uses `tensorflow-cpu`. A
+CUDA build of either library breaks or floods a CPU-only kernel.
 
 ## Datasets
 

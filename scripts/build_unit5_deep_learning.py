@@ -412,8 +412,10 @@ reg_model = keras.Sequential([
     keras.layers.Dense(8, activation="relu"),
     keras.layers.Dense(1),  # linear output for regression
 ])
-reg_model.compile(optimizer="adam", loss="mse", metrics=["mae"])
-reg_model.fit(X_reg, y_reg, epochs=15, batch_size=16, verbose=0)
+reg_model.compile(
+    optimizer=keras.optimizers.Adam(learning_rate=0.05), loss="mse", metrics=["mae"]
+)
+reg_model.fit(X_reg, y_reg, epochs=60, batch_size=16, verbose=0)
 reg_loss, reg_mae = reg_model.evaluate(X_reg, y_reg, verbose=0)
 print(f"regression MSE {reg_loss:.3f}, MAE {reg_mae:.3f}")
 print("predictions for x = -1, 0, 1:",
