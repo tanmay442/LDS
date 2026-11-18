@@ -18,6 +18,7 @@ def apply():
         "KERAS_HOME": ROOT / ".keras",
         "MPLCONFIGDIR": ROOT / ".cache" / "matplotlib",
         "HF_HOME": ROOT / ".cache" / "huggingface",
+        "SEABORN_DATA": ROOT / ".cache" / "seaborn",
         "TF_CPP_MIN_LOG_LEVEL": "3",
     }.items():
         os.environ.setdefault(name, str(path))

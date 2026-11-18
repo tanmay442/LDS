@@ -57,6 +57,7 @@ def project_environment():
         "KERAS_HOME": str(ROOT / ".keras"),
         "MPLCONFIGDIR": str(ROOT / ".cache" / "matplotlib"),
         "HF_HOME": str(ROOT / ".cache" / "huggingface"),
+        "SEABORN_DATA": str(ROOT / ".cache" / "seaborn"),
         "TF_CPP_MIN_LOG_LEVEL": "3",
     }
 

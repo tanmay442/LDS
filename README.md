@@ -122,6 +122,7 @@ the project. Nothing is written to your home directory.
 | scikit-learn downloads | `.data/scikit_learn_data/` |
 | Keras config | `.keras/` |
 | Matplotlib font cache | `.cache/matplotlib/` |
+| Seaborn dataset cache | `.cache/seaborn/` |
 | Jupyter settings, state, runtime | `.jupyter/` |
 | IPython profile and kernel startup filters | `.jupyter/ipython/` |
 | Hugging Face cache | `.cache/huggingface/` |
